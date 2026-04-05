@@ -22,7 +22,6 @@ const navItems = [
 <style scoped>
 .navigation {
   background-color: #ffffff;
-  display: flex;
   border-bottom: #383838 4px solid;
   padding: 25px;
   padding-left: 35px;
