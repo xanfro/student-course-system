@@ -7,7 +7,7 @@ const id = ref('5120235257')
 <template>
   <div class="container">
     <div class="id">{{ id }}</div>
-    <img src="../assets/prj1.png" alt="二维码展示处" class="QRcode" />
+    <img src="../assets/prj2.png" alt="二维码展示处" class="QRcode" />
     <div class="name">{{ name }}</div>
   </div>
 </template>
@@ -24,6 +24,7 @@ const id = ref('5120235257')
   align-items: center;
   background-color: white;
   border: 1px solid #ccc;
+  transform: scale(0.9);
 }
 
 .name {

@@ -1,4 +1,4 @@
--- 创建课程表
+﻿-- 创建课程表
 CREATE TABLE IF NOT EXISTS course (
     id INT PRIMARY KEY AUTO_INCREMENT,
     name VARCHAR(255) NOT NULL COMMENT '课程名称',
@@ -7,7 +7,7 @@ CREATE TABLE IF NOT EXISTS course (
     schedule VARCHAR(255) NOT NULL COMMENT '上课时间'
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
 
--- 插入初始数据
+-- 插入扩充后的初始数据 (15门核心课程)
 INSERT INTO course (id, name, credits, instructor, schedule) VALUES
 (1, '计算机科学导论', 3, '张教授', '周一 9:00-11:00'),
 (2, '数据结构与算法', 4, '李教授', '周二 14:00-16:00'),
@@ -18,4 +18,9 @@ INSERT INTO course (id, name, credits, instructor, schedule) VALUES
 (7, '软件工程导论', 3, '周教授', '周二 9:00-11:00'),
 (8, '编译原理', 4, '吴教授', '周三 14:00-16:00'),
 (9, '计算机安全', 3, '郑教授', '周四 10:00-12:00'),
-(10, '人机交互设计', 3, '冯教授', '周五 13:00-15:00');
+(10, '人机交互设计', 3, '冯教授', '周五 13:00-15:00'),
+(11, '高等数学(一)', 5, '陈老师', '周一 8:00-10:00'),
+(12, '线性代数', 4, '高老师', '周三 8:00-10:00'),
+(13, 'Python程序设计', 2, '林老师', '周四 15:00-17:00'),
+(14, '离散数学', 4, '黄教授', '周五 14:00-16:00'),
+(15, '机器学习', 4, '马教授', '周二 10:00-12:00');

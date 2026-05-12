@@ -3,7 +3,8 @@ import { RouterLink } from 'vue-router'
 const navItems = [
   { name: '首页', path: '/' },
   { name: '学生管理', path: '/student' },
-  { name: '课程管理', path: '/course' }
+  { name: '课程管理', path: '/course' },
+  { name: '选课管理', path: '/selection' }
 ]
 </script>
 

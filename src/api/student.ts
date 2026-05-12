@@ -8,7 +8,7 @@ const deleteStudentByIds = (ids: number[]) => {
     return request.delete('/student', { data: ids });
 }
 
-const addStudent = (student: { name: string; age: number; gender: string; major: string; grade: string; gpa: number }) => {
+const addStudent = (student: { name: string; age: number; gender: string; major: string; className: string; grade: string; gpa: number }) => {
     return request.post('/student', student);
 }
 
